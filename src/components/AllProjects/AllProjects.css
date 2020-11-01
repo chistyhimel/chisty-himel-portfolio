@@ -1,0 +1,32 @@
+.all-project-container{
+    font-family: "Poppins",sans-serif;
+    background-image: linear-gradient(135deg, #000000cb 20%, #051514e1 80%),
+    url("../../image/bg-portfolio.jpg");
+    background-position: bottom ;
+    background-size: cover;
+}
+.all-project-container h1{
+
+text-align: center;
+box-sizing: border-box;
+margin: 0;
+outline: 0;
+padding: 0;
+margin-top: 0;
+margin-bottom: .5rem;
+font-size: 42px;
+line-height: 1;
+font-weight: 800;
+color: rgb(255, 255, 255);
+}
+.all-project-container .top-text{
+    font-size: 25px !important;
+}
+.all-project-container h1:after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #009e66;
+    margin: 30px auto;
+}
