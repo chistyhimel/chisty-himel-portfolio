@@ -20,7 +20,7 @@ const AllProjects = () => {
           {ProjectData.map((project, idx) => (
             <Col md={6} className="mb-4 mt-3">
               <Card className="border-0 project-card" key={idx}>
-                <Carousel>
+                <Carousel className="project-img-border">
                   <Carousel.Item>
                     <img
                       className="d-block w-100"
@@ -48,10 +48,15 @@ const AllProjects = () => {
                     {project.name}
                   </Card.Title>
                   <hr className="bg-secondary" />
-                  <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                  <Card.Text className="text-left">
+                    {project.description}{" "}
+                    <h5>
+                      {project.used.map((item) => (
+                        <span class="badge badge-secondary font-weight-light border mr-2 mt-2">
+                          {item}
+                        </span>
+                      ))}
+                    </h5>
                   </Card.Text>
                   <button
                     type="button"
